@@ -1,0 +1,83 @@
+@media (max-with:1100px) {
+    .hero__content {
+        height: auto;
+
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+
+    .hero__desc {
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .hero__btn-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__img-wrap {
+        width: 569px;
+        height: 593px;
+        margin-left: auto;
+        flex-direction: column-reverse;
+    }
+
+    .hero__img {
+        flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            /*Ширина контейнера по макету 708px + 40px padding, который мы задавали ранее*/
+            max-width: 748px;
+        }
+    }
+
+    /* Блок в котором находятся картинка и описании (секция about) */
+    .about__content {
+        /*Меняем направление главной оси (теперь главная ось направлена снизу вверх*/
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
+
+
+.slider__list {
+    gap: 30px 40px;
+}
+
+@media (max-with: 475px) {
+    .container {
+        max-width: 310px;
+        padding: 0px 5px;
+    }
+
+    .header.nav {
+        display: none;
+    }
+
+    .friends__slider {
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .slider__list {}
+
+    .slider__item {}
+
+    .slider__controls {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider__control {
+        position: static;
+        display: block;
+        transform: translateY(0);
+    }
+}
